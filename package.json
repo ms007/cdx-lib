@@ -5,10 +5,13 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "style": "dist/styles.css",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "start": "rollup -c -w"
   },
   "author": "ms007@gmx.ch",
   "license": "MIT",
@@ -27,7 +30,8 @@
     "rollup": "^0.52.1",
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-commonjs": "^8.2.6",
-    "rollup-plugin-node-resolve": "^3.0.0"
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-watch": "^4.3.1"
   },
   "dependencies": {
     "prop-types": "^15.6.0",
