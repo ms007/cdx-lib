@@ -5,9 +5,7 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "style": "dist/styles.css",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
@@ -31,6 +29,7 @@
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-commonjs": "^8.2.6",
     "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-postcss": "^0.5.5",
     "rollup-watch": "^4.3.1"
   },
   "dependencies": {

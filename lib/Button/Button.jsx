@@ -1,5 +1,11 @@
 import React from 'react';
 
-const Button = () => <button type="button" />;
+import './Button.css';
+
+const Button = () => (
+  <button className="Button" type="button">
+    Save
+  </button>
+);
 
 export default Button;
