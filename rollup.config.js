@@ -1,6 +1,7 @@
 import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 import postcss from 'rollup-plugin-postcss';
+import cssnext from 'postcss-cssnext';
 import pkg from './package.json';
 
 export default {
@@ -21,12 +22,9 @@ export default {
       extensions: ['.js', '.jsx']
     }),
     postcss({
-      plugins: [
-        // cssnext(),
-        // yourPostcssPlugin()
-      ],
+      plugins: [cssnext()],
       sourceMap: false,
-      extract: 'dist/styles.css',
+      extract: false,
       extensions: ['.css']
     }),
     babel({
