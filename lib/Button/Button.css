@@ -1,3 +1,26 @@
 .Button {
-  padding: 10px 20px;
+  background-color: #356fe0;
+  color: #ffffff;
+  border-radius: 3.5px;
+  font-size: 16px;
+  padding: 14px;
+  text-rendering: optimizeLegibility;
+  /* todo global */
+  text-size-adjust: 100%;
+  transition-delay: 0s;
+  transition-duration: 0.15s;
+  transition-property: background-color;
+  transition-timing-function: ease-in-out;
+  -webkit-font-smoothing: antialiased;
+}
+
+.Button:hover,
+.Button:active {
+  background-color: #3168d2;
+}
+
+.Button:focus {
+  outline-color: #3b99fc;
+  outline-style: auto;
+  outline-width: 5px;
 }
