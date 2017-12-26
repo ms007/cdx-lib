@@ -1,3 +1,4 @@
+import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 import postcss from 'rollup-plugin-postcss';
@@ -20,6 +21,11 @@ export default {
   plugins: [
     resolve({
       extensions: ['.js', '.jsx']
+    }),
+    commonjs({
+      namedExports: {
+        'node_modules/classnames/index.js': ['cx']
+      }
     }),
     postcss({
       plugins: [cssnext()],

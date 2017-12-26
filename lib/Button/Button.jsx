@@ -1,16 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import cx from 'classnames';
 
 import './Button.css';
 
-const Button = ({ label }) => (
-  <button className="Button" type="button">
-    {label}
-  </button>
-);
+const Button = ({ label, primary, flat }) => {
+  const classes = cx('Button', {
+    'Button--primary': primary,
+    'Button--flat': flat
+  });
+
+  return (
+    <button className={classes} type="button">
+      {label}
+    </button>
+  );
+};
 
 Button.propTypes = {
-  label: PropTypes.string.isRequired
+  label: PropTypes.string.isRequired,
+  primary: PropTypes.bool,
+  flat: PropTypes.bool
+};
+
+Button.defaultProps = {
+  primary: false,
+  flat: true
 };
 
 export default Button;
