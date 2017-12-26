@@ -1,7 +1,7 @@
 {
-  "name": "sdx-react",
+  "name": "cdx-react",
   "version": "0.1.0",
-  "description": "react components used for sdx",
+  "description": "react components used for cdx",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "style": "dist/styles.css",
@@ -39,5 +39,9 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0 || ^16.0.0",
+    "react-dom": "^15.0.0 || ^16.0.0"
   }
 }

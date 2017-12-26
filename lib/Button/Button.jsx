@@ -1,11 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './Button.css';
 
-const Button = () => (
+const Button = ({ label }) => (
   <button className="Button" type="button">
-    Save
+    {label}
   </button>
 );
+
+Button.propTypes = {
+  label: PropTypes.string.isRequired
+};
 
 export default Button;

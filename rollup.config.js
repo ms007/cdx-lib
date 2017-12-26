@@ -24,7 +24,7 @@ export default {
     postcss({
       plugins: [cssnext()],
       sourceMap: false,
-      extract: false,
+      extract: 'dist/style.css',
       extensions: ['.css']
     }),
     babel({
