@@ -1,0 +1,14 @@
+.Paper {
+  padding: 16px;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: -1px 0 2px rgba(0, 0, 0, 0.15), 1px 0 2px rgba(0, 0, 0, 0.15),
+    0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 600px) {
+  .Paper {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

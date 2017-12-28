@@ -24,8 +24,8 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  primary: false,
-  flat: true
+  primary: true,
+  flat: false
 };
 
 export default Button;
